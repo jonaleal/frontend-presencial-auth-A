@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-container {
+  background-image: url("../../public/img/main_background.png");
+  background-position: 60%;
+}
+.debug{
+  border: 2px solid red;
+}
+
+
+
+.form-fields-container {
+  @apply flex flex-col gap-3 justify-center;
+  width: 80%;
+  height: 95%;
+}
+
+.form-fields-container div input {
+  border-bottom: 1px solid #858585;
+}
+
+
+/* .form-fields-container div select {
+  border-bottom: 1px solid #858585;
+} */
+
+.form-fields-container label {
+  align-self: baseline;
+  font-size: 14px;
+}
+
+.form-fields-container div {
+  @apply flex flex-col;
+  width: 100%;
+}
+
+.form-fields-container input {
+  width: 100%;
+  margin-top: 2px;
+  border: none;
+  border-bottom: 1px solid #858585;
+
+}
+
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} */
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* .form-fields-container select {
+  margin-top: 2px;
+  width: 100%;
+  margin-top: 5px;
+  border: none;
+  border-bottom: 1px solid #858585;
+  font-family: 'Inter', sans-serif;
+} */
+
+ul {
+  list-style-type: disc; /* or use other values like circle, square, etc. */
+}
+
+
+.nav-btn {
+  border-radius: 20px;
+  padding: 5px 10px;
+  background-color: #0077B6;
+  color: white;
+  font-size: 13px;
+}
+
+.nav-btn3 {
+  border-radius: 20px;
+  padding: 6px 15px;
+  background-color: #0077B6;
+  color: white;
+  font-size: 13px;
+  transition: transform 0.3s ease;
+}
+
+@media (min-width: 1100px) {
+  .form-container{ 
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    justify-content: space-evenly;
+  }
+}
+
